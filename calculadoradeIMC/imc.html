@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<div class="box">
+  <p>Coloque os seus dados na calculadora e calcule o seu IMC:</p>
+  <div class="field-age"> <label>Idade</label>
+  </div>
+  <input type="number" name="age" text="Idade" placeholder="Ex: 35" maxlength="200" id="age" min="0" max="119">
+  <br>
+  <span class="caption">anos</span>
+  <hr>
+  <div class="field-height"> <label>Altura</label>
+  </div>
+  <input type="number" name="height" text="Altura" placeholder="Ex: 165" maxlength="200" id="height" min="0" max="225">
+  <br>
+  <span class="caption">cm</span>
+  <hr>
+  <div class="field-weight"> <label>Peso</label>
+  </div>
+  <input type="number" name="weight" text="Peso" placeholder="Ex: 62,5" maxlength="200" id="weight" min="0" max="300">
+  <br>
+  <span class="caption">kg</span>
+  <hr>
+  <div>
+    <input class="submitStyle" type="button" id="submit" name="calculate" value="Calcular">
+  </div>
+</div>
+</div>
+</body>
+<script>
+  const calculate = document.getElementById('submit')
+  calculate.addEventListener('click', () => {
+
+    let age = document.getElementById('age').value
+    let height = document.getElementById('height').value
+    let weight = document.getElementById('weight').value
+
+    height = height / 100;
+    let imc = weight / (height * height);
+    imc = imc.toPrecision(4);
+
+    const table = {
+      Age: age,
+      Height: height,
+      Weight: weight,
+      IMC: imc
+    }
+
+    console.table([table]);
+
+    alert('Resultado IMC : ' + imc);
+  })
+</script>
+
+</html>
