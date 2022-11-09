@@ -53,30 +53,35 @@
     let imc = weight / (height * height);
     imc = imc.toPrecision(4);
 
-    if (imc < 16){
-      imcText="Magreza grave, IMC menor do que 17.";
-    }else if(imc < 17){
-      imcText="Magreza moderada, IMC entre 17 e 18,5."
-    }else if(imc < 18,5){
-      imcText="Magreza leve, IMC entre 18,5 e 25."
-    }else if (imc < 25){
-      imcText="Saudável, IMC entre 25 e 30."
-    }else if(imc < 35){
-      imcText="Sobrepeso, IMC entre 30 e 35."
-    }else if(imc < 35){
-      imcText="Obesidade grau I, IMC entre 35 e 40."
-    }else if(imc < 40)
+    if (imc < 16) {
+      imcText = "Magreza grave, IMC menor do que 16.";
+    } else if (imc < 17) {
+      imcText = "Magreza moderada, IMC entre 16 e 17.";
+    } else if (imc < 25) {
+      imcText = "Magreza leve, IMC entre 17 e 18,5.";
+    } else if (imc < 25) {
+      imcText = "Saudável, IMC entre 18,5 e 25.";
+    } else if (imc < 30) {
+      imcText = "Sobrepeso, IMC entre 25 e 30.";
+    } else if (imc < 35) {
+      imcText = "Obesidade grau I, IMC entre 30 e 35.";
+    } else if (imc < 40) {
+      imcText = "Obesidade Grau II, IMC entre 35 e 40.";
+    } else {
+      imcText = "Obesidade Grau III, IMC maior do que 40."
+    }
 
     const table = {
       Age: age,
       Height: height,
       Weight: weight,
-      IMC: imc
-    }
+      IMC: imc,
+      "Descrição": imcText
+    };
 
     console.table([table]);
 
-    alert('Resultado IMC : ' + imc);
+    alert('Resultado IMC : ' + imc + " kg/m2. " + imcText);
   })
 </script>
 
