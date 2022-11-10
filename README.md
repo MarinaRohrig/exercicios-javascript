@@ -29,3 +29,15 @@ https://www.saude.rj.gov.br/obesidade/noticias/2019/03/imc-voce-sabe-o-que-o-ind
   <p>Caso o número de lados seja inferior a 3 escrever "não é polígono".</p>
 
 3 - Crie uma lógica que recebe um número inteiro e determina se ele e par ou ímpar.
+
+## Exercício 3 
+
+1 - Crie um algoritmo que imprima na tela o fatorial de 10. https://brasilescola.uol.com.br/matematica/fatorial.htm
+
+2 - Utilize a estrutura de repetição for para desenvolver um algoritmo que seja capaz de inverter uma palavra. Por exemplo, a palavra “banana” seria invertida para “ananab”. Utilize a string abaixo como exemplo, depois troque por outras para verificar se seu algoritmo está funcionando corretamente.
+
+3 - Considere o array:   let array = ['java', 'javascript', 'python', 'html', 'css'];
+Utilize a estrutura de repetição for para escrever dois algoritmos: um que imprima no console a maior palavra desse array e outro que imprima a menor. Considere o número de caracteres de cada palavra.
+
+4 - Escreva um algoritmo que imprima no console o maior número primo entre 2 e 100.
+https://www.todamateria.com.br/o-que-sao-numeros-primos/#:~:text=Os%20n%C3%BAmeros%20primos%20s%C3%A3o%20aqueles,por%20um%20e%20ele%20mesmo.
