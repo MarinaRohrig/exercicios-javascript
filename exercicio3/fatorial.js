@@ -5,8 +5,8 @@ let result = x;
 
 
 // laço para calcular o multiplicador
-for (let i = 1; i < x; i++) { 
-    result = result*i; 
+for (let i = 1; i < x; i++) {
+    result = result * i;
 }
 
 console.log(result);
