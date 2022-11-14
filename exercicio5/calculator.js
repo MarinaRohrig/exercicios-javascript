@@ -1,7 +1,7 @@
-function calc(num){
-    let op = num.value;
-    let param1=parseFloat(document.getElementById("number1"));
-    let param2=parseFloat(document.getElementById("number2"));
-    return (eval(param1+op+param2));
-}
+const visor = document.getElementById('visor');
+//busca qualquer elemento que tenha parte do id como "tecla"
+const numeros = document.querySelectorAll('[id*=tecla]');
 
+const inserirNumero = (evento) => display.textContent = evento.target.textContent;
+
+numeros.forEach(numero => numero.addEventListener('click',inserirNumero));
