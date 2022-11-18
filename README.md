@@ -3,6 +3,7 @@ Compilado de exercícios feitos em JavaScript para estudo.
 
 
 # SEMANA 1 
+
 ## Exercício 1
 O que é IMC 
 https://www.saude.rj.gov.br/obesidade/noticias/2019/03/imc-voce-sabe-o-que-o-indice-de-massa-corporal-diz-sobre-sua-saude
@@ -88,3 +89,20 @@ Retorno esperado: false</p>
 ## Exercício 5
 
 1 - O objetivo desse exercício é fazer uma calculadora funcional.
+
+# SEMANA 2
+
+## Exercício 1
+<p>
+let numeros = [25, 64, 4, 9, 81, 36, 49, 1, 100, 121, 16 ];
+1 - Crie funções utilizando arrow functions que retorne em um novo array e em ordem crescente:
+- O dobro de cada valor dentro desse array
+- A metade de cada valor dentro desse array
+- A raiz de cada valor dentro desse array
+
+2 - Baixe o arquivo destructuring.js, e apenas utilizando o conceito de desestruturação desestruture esse array trazendo o seguinte resultado
+"Chris Ahmad Antigoni Toby Sam Antony Brad"
+
+3 - Escreva uma função chamada juntarObjetos que aceita como parametro dois objetos e retorna um novo objeto que contém todas as chaves e valores do primeiro objeto e do segundo objeto.
+
+4 - Escreva uma função chamada encontrarMinimo que aceita um array de números como parâmetro e retorna o menor argumento.</p>
