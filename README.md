@@ -84,3 +84,7 @@ Retorno esperado: true
 
 verificaFimPalavra('joaofernando', 'fernan');
 Retorno esperado: false</p>
+
+## Exercício 5
+
+1 - O objetivo desse exercício é fazer uma calculadora funcional.
