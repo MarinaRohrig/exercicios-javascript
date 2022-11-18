@@ -1,6 +1,8 @@
 # exercicios-javascript
 Compilado de exercícios feitos em JavaScript para estudo.
 
+
+# SEMANA 1 
 ## Exercício 1
 O que é IMC 
 https://www.saude.rj.gov.br/obesidade/noticias/2019/03/imc-voce-sabe-o-que-o-indice-de-massa-corporal-diz-sobre-sua-saude
