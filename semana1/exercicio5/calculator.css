@@ -1,0 +1,25 @@
+.calculator {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-45%, -45%);
+  border-style: solid;
+  border-radius: 1px;
+  border-color: cadetblue;
+}
+
+table {
+  width: 50%;
+  background-color: rgb(151, 248, 215);
+}
+
+button {
+  width: 100%;
+  font-size: 150%;
+  background-color: rgb(255, 187, 187);
+}
+
+p {
+  text-align: center;
+  font-size: 160%;
+}

@@ -1,64 +1,53 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt_BR">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport"
     content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href="calculator.css" rel="stylesheet">
-  <script src="calculator.js"></script>
   <title>Calculator</title>
-  <style>
-    table {
-      width: 50%;
-    }
-
-    button {
-      width: 100%;
-      font-size: 150%;
-    }
-
-    .ac {
-      color: red;
-    }
-  </style>
 </head>
-
 <body>
-  <table>
-    <tr>
-      <td colspan="4"><button id="visor">000000000</button></td>
-    </tr>
-    <tr>
-      <td><button id="tecla1">1</button></td>
-      <td><button id="tecla2">2</button></td>
-      <td><button id="tecla3">3</button></td>
-      <td><button id="adicao">+</button></td>
-    </tr>
-    <tr>
-      <td><button id="tecla4">4</button></td>
-      <td><button id="tecla5">5</button></td>
-      <td><button id="tecla6">6</button></td>
-      <td><button id="subtracao">-</button></td>
-    </tr>
-    <tr>
-      <td><button id="tecla7">7</button></td>
-      <td><button id="tecla8">8</button></td>
-      <td><button id="tecla9">9</button></td>
-      <td><button id="multiplicacao">*</button></td>
-    </tr>
-    <tr>
-      <td colspan="3"><button id="tecla0">0</button></td>
-      <td colspan="3"><button id="divisao">/</button>
-      </td>
-    </tr>
-    <tr>
-      <td colspan=" 2"><button id="ac">AC</button></td>
-      <td><button id="decimal">.</button></td>
-      <td><button id="igual">=</button></td>
-    </tr>
-  </table>
+  <div class="body">
+    <div class="calculator">
+      <table>
+        <tr class = "display">
+          <td colspan="4">
+            <p class="result" id="finalNumber"></p>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="button" onclick="insert('1')">1</button></td>
+          <td><button class="button" onclick="insert('2')">2</button></td>
+          <td><button class="button" onclick="insert('3')">3</button></td>
+          <td><button class="button" onclick="insert('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button class="button" onclick="insert('4')">4</button></td>
+          <td><button class="button" onclick="insert('5')">5</button></td>
+          <td><button class="button" onclick="insert('6')">6</button></td>
+          <td><button class="button" onclick="insert('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button class="button" onclick="insert('7')">7</button></td>
+          <td><button class="button" onclick="insert('8')">8</button></td>
+          <td><button class="button" onclick="insert('9')">9</button></td>
+          <td><button class="button" onclick="insert('*')">*</button></td>
+        </tr>
+        <tr>
+          <td colspan="3"><button class="button" onclick="insert('0')">0</button></td>
+          <td colspan="3"><button class="button" onclick="insert('/')">/</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan=" 2"><button class="buttonAC" id="ac" onclick="clean()">AC</button></td>
+          <td><button class="button" onclick="insert('.')">.</button></td>
+          <td><button class="button" onclick="calc()">=</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="./calculator-script.js"></script>
 </body>
-<script src="calculator.js"></script>
-
 </html>
