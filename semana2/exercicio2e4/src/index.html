@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio4</title>
+</head>
+<body>
+ <label for=""> Digite seu CEP:</label>
+ <input type="text" id="inputCEP" required>
+ <button id="buttonCEP">Buscar CEP</button>
+
+ <script>
+  //exercicio 4 
+  let element = document.getElementById('buttonCEP');
+   element.addEventListener("click",() => { 
+    let meuCEP = document.getElementById('inputCEP').value;
+    pegaCep(meuCEP)
+  });
+ async function pegaCep(meuCEP) {
+  cep = await (await fetch(`https://brasilapi.com.br/api/cep/v2/${meuCEP}`)).json()
+  console.log(cep)
+}
+</script>
+</body>
+</html>
