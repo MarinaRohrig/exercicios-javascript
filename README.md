@@ -106,3 +106,22 @@ let numeros = [25, 64, 4, 9, 81, 36, 49, 1, 100, 121, 16 ];
 3 - Escreva uma função chamada juntarObjetos que aceita como parametro dois objetos e retorna um novo objeto que contém todas as chaves e valores do primeiro objeto e do segundo objeto.
 
 4 - Escreva uma função chamada encontrarMinimo que aceita um array de números como parâmetro e retorna o menor argumento.</p>
+
+## Exercício 2 
+<p>
+Utilizando os conceitos de webpack
+- Realize a build do projeto
+- Inicie rodando o comando "npm run start"
+
+Comandos necessários para a instalação:
+- "npm init" para a criação dos scripts a serem utilizados
+- "npm install --save-dev webpack webpack-cli webpack-dev-server" para realizar a instalação da biblioteca do webpack
+- "npm install save-dev html-webpack-plugin" para realizar a instalação do plugin de html
+
+Será considerado bem sucedido caso:
+1 - O site esteja rodando na porta localhost:8080
+2 - Apareça no console da página a mensagem "funcionou"
+
+Sites de documentação:
+Webpack: webpack
+Plugin HTML: npm: html-webpack-plugin</p>
