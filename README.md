@@ -106,3 +106,50 @@ let numeros = [25, 64, 4, 9, 81, 36, 49, 1, 100, 121, 16 ];
 3 - Escreva uma função chamada juntarObjetos que aceita como parametro dois objetos e retorna um novo objeto que contém todas as chaves e valores do primeiro objeto e do segundo objeto.
 
 4 - Escreva uma função chamada encontrarMinimo que aceita um array de números como parâmetro e retorna o menor argumento.</p>
+
+## Exercício 2 
+<p>
+Utilizando os conceitos de webpack
+- Realize a build do projeto
+- Inicie rodando o comando "npm run start"
+
+Comandos necessários para a instalação:
+- "npm init" para a criação dos scripts a serem utilizados
+- "npm install --save-dev webpack webpack-cli webpack-dev-server" para realizar a instalação da biblioteca do webpack
+- "npm install save-dev html-webpack-plugin" para realizar a instalação do plugin de html
+
+Será considerado bem sucedido caso:
+1 - O site esteja rodando na porta localhost:8080
+2 - Apareça no console da página a mensagem "funcionou"
+
+Sites de documentação:
+Webpack: webpack
+Plugin HTML: npm: html-webpack-plugin</p>
+
+## Exercício 3 
+
+<p>
+Neste exercício será necessário a criação de um diretório com os seguintes arquivos
+
+index.html
+index.js
+modules/
+- operators.js
+- util.js
+
+1 - Dentro de "operators.js" é necessário criar quatro funções matemáticas recebendo dois parâmetros cada, e trazendo o resultado
+
+2 - Em util.js é necessário a criação de quatro funções,
+- conversorReais: converte um número em um valor em reais , ou seja se ela receber 4 dever á converter para R$ 4,00
+
+adicionandoZeros: modifica um número para que este não tenha menos de onze digitos de tamanho, ou seja se for passado 89 ele deverá retornar 00000000089, colocando o número zero na frente do mesmo até alcançar o tamanho mínimo
+
+conversorCPF: crie um algoritmo que altere uma string para o formato de CPF
+
+ordenadorArray: função que realiza a organização dos números dentro de um array
+
+Todas as funções devem ser importadas utilizando o import dentro do index.js e estarem funcionais
+Todas as funções devem ser exportadas utilizando o export
+
+Lembre-se de instalar o pacote npm, lá no package.json adicionar type: "module"
+</p>
