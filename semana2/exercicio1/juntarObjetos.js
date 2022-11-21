@@ -1,5 +1,3 @@
-//Escreva uma função chamada juntarObjetos que aceita como 
-//parametro dois objetos e retorna um novo objeto que contém todas as chaves e valores do primeiro objeto e do segundo objeto.
 
 function juntarObjetos (object1, object2){
     const object = Object.assign(object1,object2);

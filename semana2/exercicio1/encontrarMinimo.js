@@ -1,4 +1,4 @@
-// Escreva uma função chamada encontrarMinimo que aceita um array de números como parâmetro e retorna o menor argumento.
+
 
 function encontrarMinimo (array){
     let arrayOrd = array.sort();
