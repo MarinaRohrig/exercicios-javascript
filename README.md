@@ -125,3 +125,31 @@ Será considerado bem sucedido caso:
 Sites de documentação:
 Webpack: webpack
 Plugin HTML: npm: html-webpack-plugin</p>
+
+## Exercício 3 
+
+<p>
+Neste exercício será necessário a criação de um diretório com os seguintes arquivos
+
+index.html
+index.js
+modules/
+- operators.js
+- util.js
+
+1 - Dentro de "operators.js" é necessário criar quatro funções matemáticas recebendo dois parâmetros cada, e trazendo o resultado
+
+2 - Em util.js é necessário a criação de quatro funções,
+- conversorReais: converte um número em um valor em reais , ou seja se ela receber 4 dever á converter para R$ 4,00
+
+adicionandoZeros: modifica um número para que este não tenha menos de onze digitos de tamanho, ou seja se for passado 89 ele deverá retornar 00000000089, colocando o número zero na frente do mesmo até alcançar o tamanho mínimo
+
+conversorCPF: crie um algoritmo que altere uma string para o formato de CPF
+
+ordenadorArray: função que realiza a organização dos números dentro de um array
+
+Todas as funções devem ser importadas utilizando o import dentro do index.js e estarem funcionais
+Todas as funções devem ser exportadas utilizando o export
+
+Lembre-se de instalar o pacote npm, lá no package.json adicionar type: "module"
+</p>
